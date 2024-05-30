@@ -5,7 +5,7 @@ const getDadJoke = async () => {
     const response = await axios.get('https://icanhazdadjoke.com/', config)
     console.log(response.data.joke)
     const newLI = document.createElement('LI');
-    newLI.append(res.data.joke);
+    newLI.append(response.data.joke);
     jokes.append(newLI);
 }
 
